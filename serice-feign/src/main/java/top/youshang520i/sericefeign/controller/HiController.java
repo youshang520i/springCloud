@@ -27,15 +27,7 @@ public class HiController {
         return serviceHi.sayHiformClientOne(name);
     }
 
-    /*@RequestMapping("/test")
-    public Map<String, Object> getMap(){
-        Map<String, Object> map = new ConcurrentHashMap<String, Object>();
-        map.put("test1",new Integer(2));
-        map.put("test2",new Double(2));
-        map.put("test3",new BigDecimal(2));
-        serviceHi.getTest(map);
-        return map;
-    }*/
+
 
 
 

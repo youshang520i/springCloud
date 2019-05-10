@@ -11,14 +11,13 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Date: Created in 10:10 2019/5/10
  * @Modified By:
  */
-@FeignClient("eureka-client2")
+@FeignClient(value = "eureka-client2",fallback = SchedualServiceHello.class)
 public interface SchedualServiceHello {
 
 
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     String helloformClientOne(@RequestParam(value = "str") String str);
 
-    /*@RequestMapping(value = "/test",method = RequestMethod.GET)
-    Map<String, Object> getTest(Map<String,Object> map);*/
+
 
 }
